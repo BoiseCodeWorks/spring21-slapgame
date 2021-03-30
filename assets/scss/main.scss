@@ -1,0 +1,22 @@
+@import "./_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./_overrides.scss";
+@import "./custom.scss";
+@import "./loaders.scss";
+
+
+// NOTE this only works if you run 'npm run sass'
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $light;
+}
+
+main {
+  flex-grow: 1;
+}
+
+
+
