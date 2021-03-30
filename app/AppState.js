@@ -11,6 +11,9 @@ class AppState extends EventEmitter {
   // The below adds intellesense for this property to be used as type Enemy
   /** @type {Enemy} */
   enemy = new Enemy('Red Dragon', 'https://art.pixilart.com/c68fd1494f04b9b.gif')
+
+  // with multiple attacks
+  // enemy = new Enemy('Red Dragon', 'https://art.pixilart.com/c68fd1494f04b9b.gif', 0, 1, 2)
 }
 
 export const ProxyState = new Proxy(new AppState(), {
@@ -26,3 +29,20 @@ export const ProxyState = new Proxy(new AppState(), {
     return true
   }
 })
+
+
+
+
+// state = {
+//   currentTransaction: 0,
+//   snacks: [new Snack(1, 'cheetos', '....')],
+//   lastVended: null
+// }
+
+
+// class snack {
+//   id: 13323
+//   price= price
+//   name= name
+//   imgUrl= imgUrl
+// }
