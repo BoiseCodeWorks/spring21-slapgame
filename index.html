@@ -22,7 +22,12 @@
     </header>
     <main class="container-fluid">
         <div class="row">
-            <div class="col" id="enemy"></div>
+            <div class="col-6" id="enemy"></div>
+            <div class="col-6 text-center">
+                <button class="btn btn-danger" onclick="app.gameController.attack(1)">Slap</button>
+                <button class="btn btn-info" onclick="app.gameController.attack(5)">Punch</button>
+                <button class="btn btn-warning" onclick="app.gameController.attack(10)">Kick</button>
+            </div>
         </div>
     </main>
     <footer class="container-fluid bg-dark text-light">

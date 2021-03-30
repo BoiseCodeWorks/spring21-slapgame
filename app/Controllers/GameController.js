@@ -12,7 +12,6 @@ function _draw() {
       <div class="card-body">
         <h4 class="card-title">${enemy.name}</h4>
         <p class="card-text">Health: ${enemy.health}</p>
-        <button class="btn btn-danger" onclick="app.gameController.slap()">Slap</button>
       </div>
     </div>
   `
@@ -28,9 +27,19 @@ export default class GameController {
     _draw()
   }
 
-
-  slap() {
-    // when creating a method for another class write the method name then ctr+. and select delcare method
-    gameService.slap()
+  attack(type) {
+    gameService.attack(type)
   }
+
+  // slap() {
+  //   // when creating a method for another class write the method name then ctr+. and select delcare method
+  //   gameService.slap()
+  // }
+
+  // punch() {
+  //   gameService.punch()
+  // }
+  // kick() {
+  //   gameService.kick()
+  // }
 }
